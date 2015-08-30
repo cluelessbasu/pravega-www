@@ -20,7 +20,6 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.optimize.CommonsChunkPlugin('shared.js'),
     new webpack.optimize.OccurenceOrderPlugin()
   ],
   resolve: {
