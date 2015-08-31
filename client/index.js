@@ -1,20 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route } from 'react-router';
-import { history } from 'react-router/lib/BrowserHistory';
+
+import Menubar from './components/menubar.js';
 
 import './styles/main.css';
 
 class App {
   render() {
     return (
-      <div>Hello</div>
+      <div>
+        <Menubar />
+      </div>
     );
   }
 }
 
 const AppRouter = (
-  <Router history={history}>
+  <Router>
     <Route path="/" component={App} />
   </Router>
 );

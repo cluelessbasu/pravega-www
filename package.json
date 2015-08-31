@@ -27,7 +27,7 @@
   "dependencies": {
     "react": "^0.14.0-beta3",
     "react-dom": "^0.14.0-beta3",
-    "react-router": "^1.0.0-beta3"
+    "react-router": "^1.0.0-beta4"
   },
   "devDependencies": {
     "babel-core": "^5.8.22",

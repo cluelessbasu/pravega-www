@@ -1,10 +1,34 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
   background-color: #303030;
   color: #FFF;
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", "Liberation Sans", Arial, Calibri, sans-serif;
+}
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px white;
+}
+
+.menubar-left {
+  height: 3.5rem; /* Will remove this after we get actual logos */
+  display: flex;
+}
+
+.menubar-left > div {
+  padding: 0.6rem 1.5rem;
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+.menubar-right {
+  display: flex;
+}
+
+.menubar-right > div {
+  padding: 0.6rem 1.5rem;
+  align-self: center;
 }
