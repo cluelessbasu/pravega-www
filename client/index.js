@@ -1,23 +1,38 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route } from 'react-router';
+import { createHistory } from 'history';
 
-import Menubar from './components/menubar.js';
+import Menubar from './components/Menubar.js';
+import Footer from './components/Footer.js';
 
 import './styles/main.css';
 
 class App {
+  static propTypes = {
+    children: PropTypes.element
+  }
+
   render() {
     return (
-      <div>
+      <div className="container">
         <Menubar />
+        <div className="content">
+          <div>
+
+          </div>
+          <div>
+            {this.props.children}
+          </div>
+        </div>
+        <Footer />
       </div>
     );
   }
 }
 
 const AppRouter = (
-  <Router>
+  <Router history={createHistory()}>
     <Route path="/" component={App} />
   </Router>
 );

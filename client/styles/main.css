@@ -7,6 +7,13 @@ html, body {
   font-family: "Helvetica Neue", "Liberation Sans", Arial, Calibri, sans-serif;
 }
 
+/*For sticky footer Read this http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .menubar {
   display: flex;
   justify-content: space-between;
@@ -31,4 +38,35 @@ html, body {
 .menubar-right > div {
   padding: 0.6rem 1.5rem;
   align-self: center;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px white;
+}
+
+.footer-menu {
+  display: flex;
+}
+
+.footer-menu > div {
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  align-self: center;
+}
+
+
+.social-media {
+  display: flex;
+}
+
+.social-media > div {
+  padding: 0.4rem 2.5rem;
+  font-size: 1.5rem;
 }
