@@ -4,7 +4,8 @@ html, body {
   background-color: #303030;
   color: #FFF;
   font-size: 1rem;
-  font-family: ".SFNSText-Regular", "SFNS Display", "Helvetica Neue", "Liberation Sans", Arial, sans-serif;
+  font-family: ".SFNSText-Regular", "SFNS Display", "Helvetica Neue",
+               "Liberation Sans", Arial, sans-serif;
 }
 
 /*For sticky footer Read this http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer */
@@ -21,7 +22,7 @@ html, body {
 }
 
 .menubar-left {
-  height: 3.5rem; /* Will remove this after we get actual logos */
+  height: 3.5rem; /* FIXME(LATER) Will remove this after we get actual logos */
   display: flex;
 }
 
@@ -46,11 +47,15 @@ html, body {
 }
 
 .sidebar {
-  margin: 5% 0 0 3%;
+  margin: 2rem 0 0 3%; /* FIXME A totally temporary hack */
 }
 
-.sidebar > div {
+.sidebar-options > div {
   padding: .6rem;
+}
+
+.sidebar-options > div:first-child {
+  text-align: center;
 }
 
 .footer {

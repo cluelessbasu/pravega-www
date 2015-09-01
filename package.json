@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "npm run dev",
-    "dev": "node devServer.js"
+    "dev": "node devServer.js",
+    "lint": "eslint client"
   },
   "repository": {
     "type": "git",

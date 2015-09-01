@@ -13,6 +13,7 @@
     "quotes": [2, "single"],
     "strict": [2, "never"],
     "comma-dangle": [0],
+    "no-undef": [2],
 
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
