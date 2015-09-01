@@ -4,6 +4,7 @@ import { Router, Route } from 'react-router';
 import { createHistory } from 'history';
 
 import Menubar from './components/Menubar.js';
+import Sidebar from './components/Sidebar.js';
 import Footer from './components/Footer.js';
 
 import './styles/main.css';
@@ -18,9 +19,7 @@ class App {
       <div className="container">
         <Menubar />
         <div className="content">
-          <div>
-
-          </div>
+          <Sidebar />
           <div>
             {this.props.children}
           </div>

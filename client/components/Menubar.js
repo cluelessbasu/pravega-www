@@ -26,10 +26,11 @@ class MenubarRight {
   render() {
     return (
       <div className="menubar-right">
-        <div>Sponsor Us</div>
+        <div>Home</div>
         <div>Schedule</div>
-        <div>Hospitality</div>
         <div>News</div>
+        <div>Hospitality</div>
+        <div>Sponsor Us</div>
         <div>Contact</div>
         <div>Login</div>
       </div>
