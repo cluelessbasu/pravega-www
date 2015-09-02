@@ -49,6 +49,9 @@ html, body {
 .content-wrapper {
   display: flex;
   flex-grow: 1;
+  width: 1200px; /* HACK So that, layout doesn't look flattened on large display.
+                    Take care while redesign for mobile */
+  align-self: center;
 }
 
 .sidebar {
