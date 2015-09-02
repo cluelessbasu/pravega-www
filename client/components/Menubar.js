@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Menubar {
   render() {
@@ -26,13 +27,13 @@ class MenubarRight {
   render() {
     return (
       <div className="menubar-right">
-        <div>Home</div>
-        <div>Schedule</div>
-        <div>News</div>
-        <div>Hospitality</div>
-        <div>Sponsor Us</div>
-        <div>Contact</div>
-        <div>Login</div>
+        <div><Link className="white-link"  to="/">Home</Link></div>
+        <div><Link className="white-link" to="/schedule">Schedule</Link></div>
+        <div><Link className="white-link" to="/news">News</Link></div>
+        <div><Link className="white-link" to="/hospitality">Hospitality</Link></div>
+        <div><Link className="white-link" to="/sponsors">Sponsor Us</Link></div>
+        <div><Link className="white-link" to="/contact">Contact</Link></div>
+        <div><Link className="white-link" to="/login">Login</Link></div>
       </div>
     );
   }

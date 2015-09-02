@@ -41,21 +41,34 @@ html, body {
   align-self: center;
 }
 
-.content {
+.white-link {
+  color: white;
+  text-decoration: none;
+}
+
+.content-wrapper {
   display: flex;
   flex-grow: 1;
 }
 
 .sidebar {
-  margin: 2rem 0 0 3%; /* FIXME A totally temporary hack */
+  margin: 3% 0 0 3%; /* FIXME A totally temporary hack */
+  min-width: 9rem;
 }
 
 .sidebar-options > div {
   padding: .6rem;
 }
 
-.sidebar-options > div:first-child {
+.sidebar-options > .back {
   text-align: center;
+}
+
+.content {
+  flex-grow: 1;
+  margin: 3%;
+  border: solid 1px white;
+  padding: 3%;
 }
 
 .footer {

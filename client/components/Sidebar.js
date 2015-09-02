@@ -62,7 +62,7 @@ class TechnicalEvents {
   render() {
     return (
       <div className="sidebar-options">
-        <div onClick={() => { this.props.handleClick(0); }}>Back</div>
+        <div className="back" onClick={() => { this.props.handleClick(0); }}>Back</div>
         <div>Technical Event 1</div>
         <div>Technical Event 2</div>
         <div>Technical Event 3</div>
@@ -84,7 +84,7 @@ class CulturalEvents {
   render() {
     return (
       <div className="sidebar-options">
-        <div onClick={() => { this.props.handleClick(0); }}>Back</div>
+        <div className="back" onClick={() => { this.props.handleClick(0); }}>Back</div>
         <div>Cultural Event 1</div>
         <div>Cultural Event 2</div>
         <div>Cultural Event 3</div>
@@ -106,7 +106,7 @@ class FunEvents {
   render() {
     return (
       <div className="sidebar-options">
-        <div onClick={() => { this.props.handleClick(0); }}>Back</div>
+        <div className="back" onClick={() => { this.props.handleClick(0); }}>Back</div>
         <div>Fun Event 1</div>
         <div>Fun Event 2</div>
         <div>Fun Event 3</div>
@@ -128,7 +128,7 @@ class OnlineEvents {
   render() {
     return (
       <div className="sidebar-options">
-        <div onClick={() => { this.props.handleClick(0); }}>Back</div>
+        <div className="back" onClick={() => { this.props.handleClick(0); }}>Back</div>
         <div>Online Event 1</div>
         <div>Online Event 2</div>
         <div>Online Event 3</div>
@@ -150,7 +150,7 @@ class Workshops {
   render() {
     return (
       <div className="sidebar-options">
-        <div onClick={() => { this.props.handleClick(0); }}>Back</div>
+        <div className="back" onClick={() => { this.props.handleClick(0); }}>Back</div>
         <div>Workshops 1</div>
         <div>Workshops 2</div>
         <div>Workshops 3</div>
@@ -172,7 +172,7 @@ class LectureSeries {
   render() {
     return (
       <div className="sidebar-options">
-        <div onClick={() => { this.props.handleClick(0); }}>Back</div>
+        <div className="back" onClick={() => { this.props.handleClick(0); }}>Back</div>
         <div>Lecture 1</div>
         <div>Lecture 2</div>
         <div>Lecture 3</div>
