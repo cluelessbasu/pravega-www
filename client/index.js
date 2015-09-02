@@ -3,18 +3,9 @@ import ReactDOM from 'react-dom';
 import { Router, Route } from 'react-router';
 import { createHistory } from 'history';
 
-import Home from './components/Home.js';
-
-import Menubar from './components/Menubar.js';
-import Schedule from './components/Schedule.js';
-import News from './components/News.js';
-import Hospitality from './components/Hospitality.js';
-import Sponsors from './components/Sponsors.js';
-import Contact from './components/Contact.js';
-import Login from './components/Login.js';
-
-import Sidebar from './components/Sidebar.js';
-import Footer from './components/Footer.js';
+import { Menubar, Home, Schedule, News,
+         Hospitality, Sponsors, Contact,
+         Login, Sidebar, Footer } from './components';
 
 import './styles/main.css';
 
