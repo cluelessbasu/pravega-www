@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Footer {
 
@@ -7,7 +8,7 @@ class Footer {
       <div className="footer">
         <div className="footer-menu">
           <div>Feedback</div>
-          <div>About</div>
+          <div><Link className="white-link"  to="/about">About</Link></div>
           <div>FAQ</div>
         </div>
         <div className="social-media">
